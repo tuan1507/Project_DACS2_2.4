@@ -87,10 +87,41 @@ function viewcart_thanhtoan() {
     $bill = pdo_query_one($sql);
     return $bill;
  }
- function load_bill($id_account){
+function load_bill(){
     $sql= "SELECT * from bill ";
-    if ($id_account>0) $sql.=" AND id_account=".$id_account;
-    $sql.="ORDER BY id DESC";
-    pdo_query_one($sql);
+    $list_bill = pdo_query($sql);
+    return $list_bill;
  }
+
+function bill_status($status) {
+    switch ($status) {
+        case "0":
+            $status_bill = "Đơn hàng mới";
+            break;
+        case "1":
+            $status_bill = "Đang xử lí";
+            break;
+        case "2":
+            $status_bill = "Đang giao hàng";
+            break;
+        case "3":
+            $status_bill = "Hoàn tất";
+            break;
+        default:
+            $status_bill = "Đơn hàng mới";
+            break;
+    }
+    return ($status_bill);
+}
+
+function loadone_cart($id) {
+    $sql = "SELECT * FROM cart WHERE id_bill=".$id;
+    $cart_chitiet = pdo_query_one($sql);
+    return  $cart_chitiet;
+}
+function load_cart() {
+    $sql = "SELECT * FROM cart ";
+    $cart = pdo_query($sql);
+    return $cart;
+}
 ?>

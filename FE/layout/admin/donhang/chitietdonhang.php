@@ -68,30 +68,27 @@
         </nav>
     </header>
     <!-------------- List Category ----------------->
+    <div>
+        <h2>Chi tiết đơn hàng</h2>
+    </div>
     <table>
         <tr>
             <th>Mã đơn hàng</th>
-            <th>Khách hàng</th>
-            <th>Giá trị đơn hàng</th>
-            <th>Tình trạng</th>
-            <th>Thao tác</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
         </tr>
         <?php
-     foreach ($list_bill as $bill ) {
-        extract ($bill);
-        $chitietbill = "index.php?act=chitietbill&id=".$id;
-        $khachhang = $bill["bill_name"].'
-        <br> '.$bill["bill_address"].'
-        <br> '.$bill["bill_tel"].'
-        <br> '.$bill["bill_email"];
-        $ttdh = bill_status($bill["bill_status"]);
-        echo '<tr>
-        <td>'.$id.'</td>
-        <td>'.$khachhang.'</td>
-        <td>'.$total.'</td>
-        <td>'.$ttdh.'</td>
-        <td><a href="'.$chitietbill.'" class="btn_delete_update"><input type="button"  value="">Chi tiết</a>
-    </tr>';
+       if (is_array($cart_chitiet)) {
+        foreach ($cart_chitiet as $item) {
+            if ($item['id_bill'] == $id) { // $id là id của hóa đơn bạn quan tâm
+                echo '<tr>
+                    <td>'.$item["id_bill"].'</td>
+                    <td>'.$item["ten_sanpham"].'</td>
+                    <td>'.$item["soluong"].'</td>
+                    <td>'.$item["thanhtien"].'</td>
+                </tr>';
+            }
+        }
     }
-    ?>
-    </table>
+        ?>

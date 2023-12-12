@@ -130,6 +130,17 @@ if (isset($_GET['act'])) {
             $bill = loadone_bill($idbill);
             include ("user/view_main/view/bill_complete.php");
             break;
+        case "donhang":
+            $list_bill = load_bill();
+            include ("admin/donhang/donhang.php");
+            break;
+        case "chitietbill":
+            if(isset($_GET['id'])&&($_GET['id']>0)){
+                $cart_chitiet = loadone_cart($_GET['id']);
+            }
+            // $cart = load_cart();
+            include("admin/donhang/chitietdonhang.php");
+            break;
 //------------------------DANH MUC SAN PHAM-------------------
         case 'add_dmsp':
             if(isset($_POST['themdanhmuc'])&&($_POST['themdanhmuc'])) {
@@ -311,11 +322,11 @@ if (isset($_GET['act'])) {
                     if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
                       }
                 }
-                update_sukien($tensukien,$filename,$motasukien,$idsukien,$khuyenmaisukien);
-                $list_sukien =loadall_sukien();
-                $sukien = loadone_sukien($idsukien);
-                include("admin/event/add_sukien.php");
-                break;
+            update_sukien($tensukien,$filename,$motasukien,$idsukien,$khuyenmaisukien);
+            $list_sukien =loadall_sukien();
+            $sukien = loadone_sukien($idsukien);
+            include("admin/event/add_sukien.php");
+            break;
     }
 }else {
     include ("user/view_main/view/home.php");
