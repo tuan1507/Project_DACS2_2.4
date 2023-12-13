@@ -135,10 +135,10 @@ if (isset($_GET['act'])) {
             include ("admin/donhang/donhang.php");
             break;
         case "chitietbill":
-            if(isset($_GET['id'])&&($_GET['id']>0)){
-                $cart_chitiet = loadone_cart($_GET['id']);
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $id = $_GET['id'];
+                $cart_chitiet = loadone_cart($id);
             }
-            // $cart = load_cart();
             include("admin/donhang/chitietdonhang.php");
             break;
 //------------------------DANH MUC SAN PHAM-------------------

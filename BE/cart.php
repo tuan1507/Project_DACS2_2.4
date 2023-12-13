@@ -22,14 +22,19 @@ function viewcart() {
                 <td>'.$cart[1].'</td>
                 <td>'.$cart[4].'</td>
                 <td>'.$cart[2].'</td>
-                <td>'.$cart[5].'</td>
+                <td>'.number_format($cart[5]).'</td>
                 <td>'.$xoa_cart.'</td>
             </tr>';
             $i +=1 ;
             }
             echo '<tr>
             <td>Tổng giá tiền</td>
-            <td>'.$tong.'</td></tr>';
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>'.number_format($tong).'</td>
+            <td></td>
+            </tr>';
             echo '</table>';
 
 }
@@ -54,14 +59,18 @@ function viewcart_thanhtoan() {
                  <td>'.$cart[1].'</td>
                  <td>'.$cart[4].'</td>
                  <td>'.$cart[2].'</td>
-                 <td>'.$cart[5].'</td>
+                 <td>'.number_format($cart[5]).'</td>
              </tr>';
              $i +=1 ;
              }
              echo '<tr>
-             <td>Tổng giá tiền</td>
-             <td>'.$tong.'</td></tr>';
-             echo '</table>';
+            <td>Tổng giá tiền</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>'.number_format($tong).'</td>
+            </tr>';
+            echo '</table>';
 
 }
  function tongdonhang() {

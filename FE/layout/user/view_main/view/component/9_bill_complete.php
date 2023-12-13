@@ -1,4 +1,4 @@
-        <?php
+<?php
         if (isset($_SESSION ['user'])) {
             $ten_khachhang = $_SESSION ['user']['last_name'];
              $diachi_khachhang = $_SESSION ['user']['address_account'];
@@ -12,36 +12,44 @@
             $email_khachhang = "";
         }
         ?>
-        <form action="index.php?act=bill_complete" method="post">
+<form action="index.php?act=bill_complete" method="post">
 
-            <div class="container">
-                <div>
-                    <h3>Cảm ơn quý khách đã đặt hàng</h3>
-                </div>
-                <?php
+    <div class="container">
+        <div>
+            <h2>Cảm ơn quý khách đã đặt hàng</h2>
+        </div>
+        <?php
             if(isset($bill) && (is_array($bill))) {
                 extract($bill);
             }
 
             ?>
-                <div class="row">
-                    <div>THÔNG TIN ĐƠN HÀNG</div>
-                    <div class="col-25">
-                        <div>
-                            <li>Mã đơn hàng: <?=$bill['id']?></li>
-                            <li>Ngày đặt hàng: <?=$bill['bill_date']?></li>
-                            <li>Tổng đơn hàng: <?=$bill['total']?></li>
-                        </div>
+        <div class="row">
+            <div class="thongtindonhang">
+                <h3>THÔNG TIN ĐƠN HÀNG</h3>
+                <div class="chitietdonhang">
+                    <div class="date-bill">
+                        <div class="thongtin">Mã đơn hàng:</div>
+                        <div class="chitiet"><?=$bill['id']?></div>
                     </div>
-                    <div class="col-75">
-                        <input type="text" id="lname" name="email_khachhang">
+                    <div class="date-bill">
+                        <div class="thongtin">Ngày đặt hàng:</div>
+                        <div class="chitiet"><?=$bill['bill_date']?></div>
                     </div>
-                </div>
+                    <div class="date-bill">
+                        <div class="thongtin">Tổng đơn hàng:</div>
+                        <div class="chitiet"><?= number_format($bill['total'])?> VNĐ</div>
+                    </div>
 
-                <div>
-                    <h3>Thông tin giỏ hàng</h3>
                 </div>
-                <?php
-            viewcart_thanhtoan();
-            ?>
-        </form>
+            </div>
+        </div>
+        <div class="thongtindonhang">
+            <h3>Thông tin giỏ hàng</h3>
+
+            <?php
+                    viewcart_thanhtoan();
+                ?>
+        </div>
+    </div>
+</form>

@@ -79,16 +79,13 @@
             <th>Thành tiền</th>
         </tr>
         <?php
-       if (is_array($cart_chitiet)) {
-        foreach ($cart_chitiet as $item) {
-            if ($item['id_bill'] == $id) { // $id là id của hóa đơn bạn quan tâm
-                echo '<tr>
-                    <td>'.$item["id_bill"].'</td>
-                    <td>'.$item["ten_sanpham"].'</td>
-                    <td>'.$item["soluong"].'</td>
-                    <td>'.$item["thanhtien"].'</td>
-                </tr>';
-            }
+       if(is_array($cart_chitiet)) {
+            extract ($cart_chitiet);
+            echo '<tr>
+            <td>'.$cart_chitiet["id_bill"].'</td>
+            <td>'.$cart_chitiet["ten_sanpham"].'</td>
+            <td>'.$cart_chitiet["soluong"].'</td>
+            <td>'.$cart_chitiet["thanhtien"].'</td>
+        </tr>';
         }
-    }
         ?>
