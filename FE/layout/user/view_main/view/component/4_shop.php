@@ -28,7 +28,7 @@
                                 </div>
                                 </div>
                                 <div class="build-now">
-                                    <input class="build-now-1" type="submit" name="addtocart" value="Mua ngay">
+                                    <input class="btn_shop" type="submit" name="addtocart" value="Mua ngay">
                                 </div>
                                 <input type="hidden" name="id_sanpham" value="'.$id_sanpham.'">
                                 <input type="hidden" name="ten_sanpham" value="'.$ten_sanpham.'">

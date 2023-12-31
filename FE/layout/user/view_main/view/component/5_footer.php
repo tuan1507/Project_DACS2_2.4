@@ -31,7 +31,7 @@
                     <!-- <input type="text" name="" id="" placeholder="Enter Your Name" required> -->
                     <input type="email" name="" id="" placeholder="Enter Email Address" required>
                     <textarea rows="3" placeholder="Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn_feature">Send Message</button>
                 </form>
             </div>
         </div>

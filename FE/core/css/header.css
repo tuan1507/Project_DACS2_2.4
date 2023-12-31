@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -202,7 +202,7 @@ section {
 }
 .home .row .content {
     flex: 1 1 42rem;
-} 
+}
 .home .row .books-slider {
     flex: 1 1 42rem;
 }
@@ -217,13 +217,54 @@ section {
 .home .row .books-slider a:hover img{
     transform: scale(.9);
 }
-.btn {
+.btn_shop {
+    text-align: center;
     margin-top: 1rem;
     display: inline-block;
-    padding: .9rem 3rem;
+    padding: 1rem 3rem;
     text-decoration: none;
     color: #fff;
     border-radius: .5rem;
+    background: var(--green);
+    font-size: 22.5px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 70%;
+    margin-left: 41px;
+}
+.btn_feature {
+    text-align: center;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: .5rem;
+    background: var(--green);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 70%;
+}
+.btn_2 {
+    text-align: center;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: .5rem;
+    background: var(--green);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn{
+    margin-top: 1rem;
+    /* display: inline-block; */
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
     background: var(--green);
     font-size: 1.7rem;
     cursor: pointer;

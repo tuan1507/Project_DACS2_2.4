@@ -23,7 +23,7 @@
             echo '<h3>'.$ten_sukien.'</h3>';
             echo '  <h1>'.$khuyenmai_sukien.'</h1>';
             echo '<p>'.$mota_sukien.'</p>';
-            echo '<a href="" class="btn">Shop now</a>';
+            echo '<a href="" class="btn_2">Shop now</a>';
             $img_link = "../../FE/core/upload/";
             $hinh = $img_link.$hinhanh_sukien;
         }

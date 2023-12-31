@@ -141,6 +141,13 @@ if (isset($_GET['act'])) {
             }
             include("admin/donhang/chitietdonhang.php");
             break;
+        case "xoabill":
+            if(isset($_GET['id'])&&($_GET['id']>0)){
+                delete_bill($_GET['id']);
+        }
+        $list_bill = load_bill();
+        include ("admin/donhang/donhang.php");
+        break;
 //------------------------DANH MUC SAN PHAM-------------------
         case 'add_dmsp':
             if(isset($_POST['themdanhmuc'])&&($_POST['themdanhmuc'])) {

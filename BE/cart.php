@@ -21,7 +21,7 @@ function viewcart() {
                 <td><img src= "'.$hinh.'" height = "80px"></td>
                 <td>'.$cart[1].'</td>
                 <td>'.$cart[4].'</td>
-                <td>'.$cart[2].'</td>
+                <td>'.number_format($cart[2]).'</td>
                 <td>'.number_format($cart[5]).'</td>
                 <td>'.$xoa_cart.'</td>
             </tr>';
@@ -58,7 +58,7 @@ function viewcart_thanhtoan() {
                  <td><img src= "'.$hinh.'" height = "80px"></td>
                  <td>'.$cart[1].'</td>
                  <td>'.$cart[4].'</td>
-                 <td>'.$cart[2].'</td>
+                 <td>'.number_format($cart[2]).'</td>
                  <td>'.number_format($cart[5]).'</td>
              </tr>';
              $i +=1 ;
@@ -125,12 +125,18 @@ function bill_status($status) {
 
 function loadone_cart($id) {
     $sql = "SELECT * FROM cart WHERE id_bill=".$id;
-    $cart_chitiet = pdo_query_one($sql);
-    return  $cart_chitiet;
+    $cart_chitiet = pdo_query($sql);
+    return $cart_chitiet;
 }
+
 function load_cart() {
     $sql = "SELECT * FROM cart ";
     $cart = pdo_query($sql);
     return $cart;
+}
+
+function delete_bill($id) {
+    $sql = "DELETE  FROM bill WHERE id=".$id;
+    pdo_execute($sql);
 }
 ?>

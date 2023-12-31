@@ -10,18 +10,32 @@
                     $hinh = $img_link.$hinhanh_sanpham;
                     echo '
                     <div class="swiper-slide box">
-                        <div class="icons">
-                            <a href="" class="fas fa-search"></a>
-                            <a href="" class="fas fa-heart"></a>
-                            <a href="" class="fas fa-eye"></a>
-                        </div>
+                    <form action="index.php?act=addtocart" method="post">
                         <div class="image">
                             <img src="'.$hinh.'" alt="">
                         </div>
                         <div class="content">
-                            <h3>'.$ten_sanpham.'</h3>
-                            <div class="price">'.$giasp_saukm.' <span>'.$giasp.'</span></div>
-                   <a href="" class="btn">Add to cart</a>
+                        <div class="deal-phone">
+                        <i class="fa-solid fa-percent"></i>
+                        <p class="share-phone">GIÁ RẺ QUÁ</p>
+                    </div>
+                    <h3>'.$ten_sanpham.'</h3>
+                    <div class="price">
+                        <div>'.number_format($giasp).'</div>
+                        <p class="discount">-19%</p>
+                    </div>
+                    <div class="Evaluate">
+                        <div class="star_feature">4.7 <i id="star" class="fa-solid fa-star"></i></div>
+                        <div class="sold_feature">(756)</div>
+                    </div>
+                    <div class="build-now">
+                        <input class="btn_feature" type="submit" name="addtocart" value="Mua ngay">
+                    </div>
+                        <input type="hidden" name="id_sanpham" value="'.$id_sanpham.'">
+                        <input type="hidden" name="ten_sanpham" value="'.$ten_sanpham.'">
+                        <input type="hidden" name="gia_sanpham" value="'.$giasp.'">
+                        <input type="hidden" name="hinh_sanpham" value="'.$hinh.'">
+                    </form>
                </div>
                </div>';
             }
@@ -44,18 +58,32 @@
                     $hinh = $img_link.$hinhanh_sanpham;
                     echo '
                     <div class="swiper-slide box">
-                        <div class="icons">
-                            <a href="" class="fas fa-search"></a>
-                            <a href="" class="fas fa-heart"></a>
-                            <a href="" class="fas fa-eye"></a>
-                        </div>
+                    <form action="index.php?act=addtocart" method="post">
                         <div class="image">
                             <img src="'.$hinh.'" alt="">
                         </div>
                         <div class="content">
-                            <h3>'.$ten_sanpham.'</h3>
-                            <div class="price">'.$giasp_saukm.' <span>'.$giasp.'</span></div>
-                   <a href="" class="btn">Add to cart</a>
+                        <div class="deal-phone">
+                        <i class="fa-solid fa-percent"></i>
+                        <p class="share-phone">GIÁ RẺ QUÁ</p>
+                    </div>
+                    <h3>'.$ten_sanpham.'</h3>
+                    <div class="price">
+                        <div>'.number_format($giasp).'</div>
+                        <p class="discount">-19%</p>
+                    </div>
+                    <div class="Evaluate">
+                        <div class="star_feature">4.7 <i id="star" class="fa-solid fa-star"></i></div>
+                        <div class="sold_feature">(756)</div>
+                    </div>
+                    <div class="build-now">
+                        <input class="btn_feature" type="submit" name="addtocart" value="Mua ngay">
+                    </div>
+                        <input type="hidden" name="id_sanpham" value="'.$id_sanpham.'">
+                        <input type="hidden" name="ten_sanpham" value="'.$ten_sanpham.'">
+                        <input type="hidden" name="gia_sanpham" value="'.$giasp.'">
+                        <input type="hidden" name="hinh_sanpham" value="'.$hinh.'">
+                    </form>
                </div>
                </div>';
             }
@@ -78,18 +106,32 @@
                     $hinh = $img_link.$hinhanh_sanpham;
                     echo '
                     <div class="swiper-slide box">
-                        <div class="icons">
-                            <a href="" class="fas fa-search"></a>
-                            <a href="" class="fas fa-heart"></a>
-                            <a href="" class="fas fa-eye"></a>
-                        </div>
+                    <form action="index.php?act=addtocart" method="post">
                         <div class="image">
                             <img src="'.$hinh.'" alt="">
                         </div>
                         <div class="content">
-                            <h3>'.$ten_sanpham.'</h3>
-                            <div class="price">'.$giasp_saukm.' <span>'.$giasp.'</span></div>
-                   <a href="" class="btn">Add to cart</a>
+                        <div class="deal-phone">
+                        <i class="fa-solid fa-percent"></i>
+                        <p class="share-phone">GIÁ RẺ QUÁ</p>
+                    </div>
+                    <h3>'.$ten_sanpham.'</h3>
+                    <div class="price">
+                        <div>'.number_format($giasp).'</div>
+                        <p class="discount">-19%</p>
+                    </div>
+                    <div class="Evaluate">
+                        <div class="star_feature">4.7 <i id="star" class="fa-solid fa-star"></i></div>
+                        <div class="sold_feature">(756)</div>
+                    </div>
+                    <div class="build-now">
+                        <input class="btn_feature" type="submit" name="addtocart" value="Mua ngay">
+                    </div>
+                        <input type="hidden" name="id_sanpham" value="'.$id_sanpham.'">
+                        <input type="hidden" name="ten_sanpham" value="'.$ten_sanpham.'">
+                        <input type="hidden" name="gia_sanpham" value="'.$giasp.'">
+                        <input type="hidden" name="hinh_sanpham" value="'.$hinh.'">
+                    </form>
                </div>
                </div>';
             }

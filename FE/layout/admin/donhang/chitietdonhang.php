@@ -68,7 +68,7 @@
         </nav>
     </header>
     <!-------------- List Category ----------------->
-    <div>
+    <div class="container">
         <h2>Chi tiết đơn hàng</h2>
     </div>
     <table>
@@ -79,13 +79,14 @@
             <th>Thành tiền</th>
         </tr>
         <?php
-       if(is_array($cart_chitiet)) {
-            extract ($cart_chitiet);
+        foreach ($cart_chitiet as $cart_item) {
             echo '<tr>
-            <td>'.$cart_chitiet["id_bill"].'</td>
-            <td>'.$cart_chitiet["ten_sanpham"].'</td>
-            <td>'.$cart_chitiet["soluong"].'</td>
-            <td>'.$cart_chitiet["thanhtien"].'</td>
-        </tr>';
+                    <td>' . $cart_item["id_bill"] . '</td>
+                    <td>' . $cart_item["ten_sanpham"] . '</td>
+                    <td>' . $cart_item["soluong"] . '</td>
+                    <td>' . number_format($cart_item["thanhtien"]) . '</td>
+                  </tr>';
         }
-        ?>
+        echo '</table>';
+    ?>
+    </table>

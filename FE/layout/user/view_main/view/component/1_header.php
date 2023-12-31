@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../../FE/core/css/home.css">
     <link rel="stylesheet" href="../../FE/core/css/header.css">
-    <link rel="stylesheet" href="../../FE/core/css/reponsi.css">
     <link rel="stylesheet" href="../../FE/core/css/login.css">
     <link rel="stylesheet" href="../../FE/core/css/shop.css">
     <link rel="stylesheet" href="../../FE/core/css/addproduct.css">
@@ -27,7 +26,7 @@
             <div class="icons">
                 <div id="search-btn" class="fas fa-search"></div>
                 <li><a href="index.php?act=cart" class="fas fa-shopping-cart"></a></li>
-                <li><a href="index.php?act=dangnhap" class="fas fa-user" id="user"></a>
+                <li><a href="" class="fas fa-user" id="user"></a>
                     <ul class="taikhoan">
                         <?php
                         if (isset($_SESSION['user'])) {

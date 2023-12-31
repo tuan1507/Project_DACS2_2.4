@@ -67,7 +67,7 @@
                 <div class="btn_controler">
                     <input type="hidden" name="id" value="<?=$id_account?>">
                     <input type="reset" value="Nhập lại" class="btn">
-                    <input type="submit" value="Cập nhật" name="capnhat" class="btn btn_add_product">
+                    <input type="submit" value="Cập nhật" name="capnhat" class="btn">
                 </div>
             </form>
         </div>

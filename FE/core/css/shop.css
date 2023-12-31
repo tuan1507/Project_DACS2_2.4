@@ -86,18 +86,19 @@
     margin-right: 15px;
 }
 .build-nows{
+    align-items: center;
     text-decoration: none;
 }
 .build-now-1{
-    display: block;
+    align-items: center;
     background: #27ae60;
     color: #FFF;
     font-size: 22px;
     height: 50px;
     width: 230px;
-    margin: 18px 8px;
+    margin: 10px 5px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
     border-radius: 5px;
 }
 .giohang{
