@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 12, 2023 lúc 08:03 AM
+-- Thời gian đã tạo: Th1 01, 2024 lúc 12:13 PM
 -- Phiên bản máy phục vụ: 10.4.27-MariaDB
 -- Phiên bản PHP: 8.2.0
 
@@ -64,22 +64,18 @@ CREATE TABLE `bill` (
 --
 
 INSERT INTO `bill` (`id`, `bill_name`, `bill_address`, `bill_tel`, `bill_email`, `total`, `bill_date`, `bill_status`) VALUES
-(7, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 0, '05:49:52pm 10/12/23', 0),
-(8, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 0, '05:54:05pm 10/12/23', 0),
-(9, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '03:38:16pm 11/12/23', 0),
-(10, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '03:46:23pm 11/12/23', 0),
-(11, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '03:47:45pm 11/12/23', 0),
-(12, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '03:47:56pm 11/12/23', 0),
-(13, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '03:49:18pm 11/12/23', 0),
-(14, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '03:50:18pm 11/12/23', 0),
-(15, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '03:51:03pm 11/12/23', 0),
-(16, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '04:16:48pm 11/12/23', 0),
-(17, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '04:17:34pm 11/12/23', 0),
-(18, '', '', '', '', 3990000, '05:35:41pm 11/12/23', 0),
-(19, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 3990000, '05:36:13pm 11/12/23', 0),
-(20, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 3990000, '05:36:54pm 11/12/23', 0),
-(21, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 3990000, '05:37:49pm 11/12/23', 0),
-(22, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 3990000, '05:38:03pm 11/12/23', 0);
+(24, 'Huân', 'Sơn Trà', '0985810174', 'salakama@gmail.com', 11560000, '02:24:24pm 12/12/23', 0),
+(26, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '05:29:36pm 13/12/23', 0),
+(27, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 5290000, '05:35:16pm 13/12/23', 0),
+(28, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 8290000, '08:32:43am 14/12/23', 0),
+(31, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 4300000, '07:03:48am 28/12/23', 0),
+(32, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 4300000, '07:04:15am 28/12/23', 0),
+(33, 'Tuấn', 'Sơn Trà', '0985810174', 'salakama@gmail.com', 4780000, '11:26:22am 01/01/24', 0),
+(34, 'Tuấn', 'Sơn Trà', '0985810174', 'salakama@gmail.com', 4780000, '11:28:04am 01/01/24', 0),
+(35, 'Tuấn', 'Sơn Trà', '0985810174', 'salakama@gmail.com', 4780000, '11:35:55am 01/01/24', 0),
+(36, 'Tuấn', 'Sơn Trà', '0985810174', 'salakama@gmail.com', 3990000, '11:36:22am 01/01/24', 0),
+(38, 'MẪn', '123', '123', '123', 7770000, '12:04:03pm 01/01/24', 0),
+(39, 'Tuấn', 'Sơn Trà', '0985810174', 'quangtuan62ld@gmail.com', 7770000, '12:04:21pm 01/01/24', 0);
 
 -- --------------------------------------------------------
 
@@ -104,27 +100,31 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`id`, `id_account`, `id_sanpham`, `img`, `ten_sanpham`, `giasp`, `soluong`, `thanhtien`, `id_bill`) VALUES
-(1, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 7),
-(3, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 10),
-(4, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 10),
-(5, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 11),
-(6, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 11),
-(7, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 12),
-(8, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 12),
-(9, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 13),
-(10, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 13),
-(11, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 14),
-(12, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 14),
-(13, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 15),
-(14, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 15),
-(15, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 16),
-(16, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 16),
-(17, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 17),
-(18, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 17),
-(20, 4, 30, '3990000', 'Sennheiser Accentum Wireles', 0, 1, 3990000, 19),
-(21, 4, 30, '3990000', 'Sennheiser Accentum Wireles', 0, 1, 3990000, 20),
-(22, 4, 30, '3990000', 'Sennheiser Accentum Wireles', 0, 1, 3990000, 21),
-(23, 4, 30, '3990000', 'Sennheiser Accentum Wireles', 0, 1, 3990000, 22);
+(24, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 23),
+(25, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 23),
+(26, 9, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 24),
+(27, 9, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 24),
+(28, 9, 31, '3990000', 'Asus ROG Gladius III Raton Gaming', 0, 1, 3990000, 24),
+(29, 9, 32, '790000', 'Joyaccess wireless mouse', 0, 1, 790000, 24),
+(30, 9, 36, '1490000', 'Magic mouse', 0, 1, 1490000, 24),
+(32, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 26),
+(33, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 26),
+(34, 4, 25, '990000', 'Logitech G304 - White', 0, 1, 990000, 27),
+(35, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 27),
+(36, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 28),
+(37, 4, 31, '3990000', 'Asus ROG Gladius III Raton Gaming', 0, 1, 3990000, 28),
+(38, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 31),
+(39, 4, 28, '4300000', 'Razer Basilisk V3 Pro Ergonomic', 0, 1, 4300000, 32),
+(40, 9, 31, '3990000', 'Asus ROG Gladius III Raton Gaming', 0, 1, 3990000, 33),
+(41, 9, 32, '790000', 'Joyaccess wireless mouse', 0, 1, 790000, 33),
+(42, 9, 31, '3990000', 'Asus ROG Gladius III Raton Gaming', 0, 1, 3990000, 34),
+(43, 9, 32, '790000', 'Joyaccess wireless mouse', 0, 1, 790000, 34),
+(44, 9, 31, '3990000', 'Asus ROG Gladius III Raton Gaming', 0, 1, 3990000, 35),
+(45, 9, 32, '790000', 'Joyaccess wireless mouse', 0, 1, 790000, 35),
+(46, 9, 31, '3990000', 'Asus ROG Gladius III Raton Gaming', 0, 1, 3990000, 36),
+(48, 4, 40, '2990000', 'Sony Silver Wireless ', 0, 1, 2990000, 39),
+(49, 4, 32, '790000', 'Joyaccess wireless mouse', 0, 1, 790000, 39),
+(50, 4, 31, '3990000', 'Asus ROG Gladius III Raton Gaming', 0, 1, 3990000, 39);
 
 -- --------------------------------------------------------
 
@@ -300,13 +300,13 @@ ALTER TABLE `banner`
 -- AUTO_INCREMENT cho bảng `bill`
 --
 ALTER TABLE `bill`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT cho bảng `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT cho bảng `danhmucsanpham`

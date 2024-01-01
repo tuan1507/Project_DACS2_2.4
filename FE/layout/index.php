@@ -96,7 +96,7 @@ if (isset($_GET['act'])) {
                 $tongtien = $soluong * $gia_sanpham;
                 $sanpham_add = [ $id_sanpham, $ten_sanpham, $gia_sanpham, $hinh_sanpham, $soluong, $tongtien];
                 array_push($_SESSION ['mycart'], $sanpham_add);
-                header("Location: index.php?act=shop");
+                header("Location: index.php?act=cart");
                 exit();
         }
             break;
@@ -113,6 +113,10 @@ if (isset($_GET['act'])) {
             include ("user/view_main/view/bill.php");
             break;
         case "bill_complete":
+            if (!isset($_SESSION['user'])) {
+                header("Location: index.php?act=dangnhap");
+                exit();
+            }
             if (isset($_POST['dongydathang'])&& ($_POST['dongydathang'])){
                 $ten_khachhang = $_POST ['ten_khachhang'];
                 $diachi_khachhang = $_POST['diachi_khachhang'];

@@ -27,7 +27,7 @@ if (isset($_SESSION ['user'])) {
                     <label for="fname">Tên khách hàng:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="fname" name="ten_khachhang" value="<?=$ten_khachhang?>" required>
+                    <input type="text" id="fname" name="ten_khachhang" value="<?=$ten_khachhang?>">
                 </div>
             </div>
             <div class="row">
@@ -35,12 +35,12 @@ if (isset($_SESSION ['user'])) {
                     <label for="lname">Địa chỉ:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="lname" name="diachi_khachhang" value="<?=$diachi_khachhang?>" required>
+                    <input type="text" id="lname" name="diachi_khachhang" value="<?=$diachi_khachhang?>">
                 </div>
             </div>
             <div class=" row">
                 <div class="col-25">
-                    <label for="subject">Số điện thoại:</label required>
+                    <label for="subject">Số điện thoại:</label>
                 </div>
                 <div class="col-75">
                     <input type="text" id="lname" name="sdt_khachhang" value="<?=$sdt_khachhang?>">
