@@ -16,7 +16,7 @@ function viewcart() {
                 $ttien = $cart[2];
                 $tong += $ttien;
                 $hinh = $img_link.$cart[3];
-                $xoa_cart = '<a href="index.php?act=deletecart&idcart='.$i.'"><input type="button" value="Xóa"></a>';
+                $xoa_cart = '<a href="index.php?act=deletecart&idcart='.$i.'"><input type="button" value="">Xóa</a>';
                 echo '<tr>
                 <td><img src= "'.$hinh.'" height = "80px"></td>
                 <td>'.$cart[1].'</td>

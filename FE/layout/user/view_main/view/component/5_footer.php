@@ -3,23 +3,23 @@
     <div class="footer-contact-add">
         <i class="fa-solid fa-house"></i>
         <div>
-            <p class="contact"><b>Address</b></p>
+            <p class="contact"><b>Địa chỉ</b></p>
             <p class="text">201 An Thu 1</p>
         </div>
     </div>
     <div class="footer-contact-add">
         <i class="fa-solid fa-phone"></i>
         <div>
-            <p class="contact"><b>Contact</b></p>
-            <p class="text">Hotline: 0938200344</p>
+            <p class="contact"><b>Liên hệ</b></p>
+            <p class="text">SĐT: 0938200344</p>
             <p class="text">Email: f.house@gmail.com</p>
         </div>
     </div>
     <div class="footer-contact-add">
         <i class="fa-solid fa-door-open"></i>
         <div>
-            <p class="contact"><b>Open</b></p>
-            <p class="text">Daily: 11:30 AM - 9:00 PM</p>
+            <p class="contact"><b>Mở cửa</b></p>
+            <p class="text">Hằng ngày: 8:30 - 17:00</p>
         </div>
     </div>
     <div class="footer-contact-add">
@@ -29,9 +29,9 @@
             <div class="contact-col">
                 <form action="">
                     <!-- <input type="text" name="" id="" placeholder="Enter Your Name" required> -->
-                    <input type="email" name="" id="" placeholder="Enter Email Address" required>
-                    <textarea rows="3" placeholder="Message" required></textarea>
-                    <button type="submit" class="btn_feature">Send Message</button>
+                    <input type="email" name="" id="" placeholder="Địa chỉ email" required>
+                    <textarea rows="3" placeholder="Tin nhắn..." required></textarea>
+                    <button type="submit" class="btn_feature">Gửi email</button>
                 </form>
             </div>
         </div>

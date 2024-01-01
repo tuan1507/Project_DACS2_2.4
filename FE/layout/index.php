@@ -120,7 +120,6 @@ if (isset($_GET['act'])) {
                 $email_khachhang = $_POST ['email_khachhang'];
                 $ngaydathang=date('h:i:sa d/m/y');
                 $tongdonhang=tongdonhang();
-
                 $idbill = insert_bill($ten_khachhang,$diachi_khachhang,$sdt_khachhang,$email_khachhang,$ngaydathang,$tongdonhang) ;
 
                 foreach ($_SESSION['mycart'] as $cart){
